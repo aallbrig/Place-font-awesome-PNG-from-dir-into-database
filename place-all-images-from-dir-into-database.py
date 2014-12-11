@@ -80,7 +80,7 @@ if __name__ == '__main__':
     # Create list of objects with filename and file size
     file_list = []
     for file in glob.glob("*.png"):
-        filesize, color, filename = file.split("_")
+        template, filesize, color, filename = file.split("_")
         filename = filename.replace('.png', '')
         found = False
         for data_structure in file_list:
